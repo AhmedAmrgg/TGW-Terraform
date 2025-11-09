@@ -8,7 +8,7 @@ This project demonstrates how to connect multiple VPCs using **AWS Transit Gatew
 
 The setup includes:
 
-- **VPC-A** and **VPC-B** (created via `for_each` loop)
+- **VPC-A** , **VPC-B** , **VPC-C** (created via `for_each` loop)
 - **Public Subnet** in VPC-A (for Bastion Host)
 - **Private Subnets** in both VPCs
 - **Internet Gateway** (VPC-A only)
@@ -47,7 +47,7 @@ The setup includes:
 
 - Terraform ≥ 1.5  
 - AWS CLI configured (`aws configure`)  
-- Existing key pairs in AWS (`amora`, `amora1`)  
+- Existing key pairs in AWS (`XXXX`, `XXXX1`)  
 - Proper IAM permissions to create networking resources  
 
 ---
