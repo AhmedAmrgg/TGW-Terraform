@@ -42,7 +42,7 @@ The setup includes:
 ---
 
 ## 🗺️ Network Diagram (Conceptual)
-
+---
 Internet
 |
 [Bastion Host]
@@ -52,7 +52,7 @@ Internet
 [Private Subnet - VPC A] ---- TGW ---- [Private Subnet - VPC B]
 | |
 [EC2 A] [EC2 B]
-
+---
 ---
 
 ## ⚙️ Prerequisites
@@ -70,16 +70,29 @@ Internet
    ```bash
    git clone https://github.com/<your-username>/tgw-terraform-project.git
    cd tgw-terraform-project
+   ```
 Initialize Terraform:
+```
 terraform init
+```
 Validate and plan:
+```
 terraform validate
 terraform plan
+```
 Apply the configuration:
+```
 terraform apply -auto-approve
+```
 Once deployed, SSH into Bastion:
+```
 ssh -i xxxxx.pem ec2-user@<bastion-public-ip>
+```
 From the Bastion Host, connect to private EC2s via their private IPs:
+```
 ssh -i amora.pem ec2-user@<private-ec2-ip>
+```
 To destroy all resources:
+```
 terraform destroy -auto-approve
+```
