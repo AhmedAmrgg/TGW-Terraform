@@ -20,7 +20,11 @@ The setup includes:
 - **Security Groups** to allow SSH and ICMP (ping)
 
 ---
+## 🏗️ Architecture Diagram
 
+![Architecture Diagram](tgw2.drawio.png)
+
+---
 ## 🧩 Components
 
 | Component | Description |
