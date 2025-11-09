@@ -41,19 +41,7 @@ The setup includes:
 
 ---
 
-## 🗺️ Network Diagram (Conceptual)
----
-Internet
-|
-[Bastion Host]
-|
-[Public Subnet - VPC A]
-|
-[Private Subnet - VPC A] ---- TGW ---- [Private Subnet - VPC B]
-| |
-[EC2 A] [EC2 B]
----
----
+
 
 ## ⚙️ Prerequisites
 
@@ -90,7 +78,7 @@ ssh -i xxxxx.pem ec2-user@<bastion-public-ip>
 ```
 From the Bastion Host, connect to private EC2s via their private IPs:
 ```
-ssh -i amora.pem ec2-user@<private-ec2-ip>
+ssh -i xxxxx.pem ec2-user@<private-ec2-ip>
 ```
 To destroy all resources:
 ```
